@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>World Software | Soluções digitais</title>
+
+    <meta
+        name="description"
+        content="Conheça a World Software, uma equipe de estudantes de Desenvolvimento de Sistemas que cria sites e sistemas."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="container barra">
+
+            <!-- Troque a imagem pela logo de vocês -->
+            <a href="#inicio" class="logo" aria-label="World Software - início">
+                <img
+                    src="imgs/logo.jpeg"
+                    alt=""
+                    class="logo-img"
+                    onerror="this.remove()"
+                >
+                <span>World<b>Software</b></span>
+            </a>
+
+            <button
+                class="menu-botao"
+                id="menuBotao"
+                aria-expanded="false"
+                aria-controls="menu"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+            </button>
+
+            <nav id="menu" class="menu" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contato" class="botao botao-pequeno">
+                    Solicitar orçamento
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grade">
+
+                <div>
+                    <p class="sobretitulo">Tecnologia que conecta ideias</p>
+
+                    <h1>
+                        Transformamos ideias em soluções
+                        <span class="gradiente">digitais.</span>
+                    </h1>
+
+                    <p class="lead">
+                        Criamos sites, sistemas e aplicações para ajudar
+                        pessoas e empresas a organizar suas atividades
+                        e colocar novos projetos em prática.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="#contato" class="botao">
+                            Fale com a gente
+                        </a>
+
+                        <a href="#servicos" class="botao botao-contorno">
+                            Conheça nossos serviços
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coloque a imagem principal em assets/img/hero.png -->
+                <div class="hero-visual ph">
+
+                    <!-- Ilustração provisória, usada enquanto não houver imagem -->
+                    <svg
+                        class="globo"
+                        viewBox="0 0 400 400"
+                        role="img"
+                        aria-label="Globo tecnológico"
+                    >
+                        <defs>
+                            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#7C3AED"/>
+                                <stop offset="1" stop-color="#38BDF8"/>
+                            </linearGradient>
+                        </defs>
+
+                        <g fill="none" stroke="url(#gg)" stroke-width="1.2">
+                            <circle cx="200" cy="200" r="150" stroke-width="2"/>
+                            <ellipse cx="200" cy="200" rx="150" ry="55" opacity=".6"/>
+                            <ellipse cx="200" cy="200" rx="55" ry="150" opacity=".6"/>
+                            <ellipse cx="200" cy="200" rx="110" ry="150" opacity=".35"/>
+                            <path d="M60 140h280M60 260h280" opacity=".35"/>
+
+                            <g class="orbita">
+                                <ellipse
+                                    cx="200"
+                                    cy="200"
+                                    rx="185"
+                                    ry="60"
+                                    transform="rotate(-25 200 200)"
+                                    stroke-dasharray="3 7"
+                                />
+                            </g>
+                        </g>
+
+                        <g fill="#38BDF8">
+                            <circle class="no" cx="120" cy="140" r="5"/>
+                            <circle class="no" cx="290" cy="170" r="5"/>
+                            <circle class="no" cx="230" cy="290" r="5"/>
+                            <circle class="no" cx="150" cy="250" r="4"/>
+                        </g>
+
+                        <path
+                            d="M120 140L290 170L230 290L150 250Z"
+                            fill="none"
+                            stroke="#38BDF8"
+                            stroke-width="1"
+                            opacity=".5"
+                        />
+                    </svg>
+
+                    <img
+                        src="assets/img/hero.png"
+                        alt="Ilustração da World Software"
+                        onerror="this.remove()"
+                    >
+                </div>
+
+                <!-- Elemento visual decorativo -->
+                <pre class="codigo" aria-hidden="true"><span class="c">// World Software</span>
+<span class="k">const</span> projeto = {
+    ideia: <span class="s">"sua ideia"</span>,
+    entrega: <span class="s">"solução digital"</span>
+};</pre>
+
+            </div>
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="secao">
+            <div class="container">
+
+                <header class="titulo-secao">
+                    <h2>O que podemos desenvolver?</h2>
+                    <p>
+                        Conheça algumas das soluções que podemos criar
+                        de acordo com cada projeto.
+                    </p>
+                </header>
+
+                <div class="grade grade-servicos">
+
+                    <article class="card">
+                        <img class="icone" src="imgs/sistemas.svg" alt="">
+                        <h3>Desenvolvimento de sistemas</h3>
+                        <p>
+                            Sistemas personalizados para organizar informações,
+                            automatizar tarefas e melhorar processos.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img class="icone" src="imgs/sites.svg" alt="">
+                        <h3>Criação de sites</h3>
+                        <p>
+                            Sites para empresas, profissionais e projetos
+                            que desejam apresentar seus serviços na internet.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img class="icone" src="imgs/gestao.svg" alt="">
+                        <h3>Sistemas de gestão</h3>
+                        <p>
+                            Ferramentas para controlar cadastros, produtos,
+                            informações e atividades de um negócio.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img class="icone" src="imgs/aplicacoes.svg" alt="">
+                        <h3>Aplicações digitais</h3>
+                        <p>
+                            Aplicações desenvolvidas para atender necessidades
+                            específicas de pessoas e empresas.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img class="icone" src="imgs/automacao.svg" alt="">
+                        <h3>Automação e integrações</h3>
+                        <p>
+                            Recursos para reduzir tarefas repetitivas e conectar
+                            funcionalidades de acordo com cada necessidade.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TECNOLOGIAS -->
+        <section id="tecnologias" class="secao secao-alt">
+            <div class="container">
+
+                <header class="titulo-secao">
+                    <h2>Tecnologias que utilizamos</h2>
+                    <p>
+                        Algumas das ferramentas e tecnologias que estudamos
+                        e aplicamos em nossos projetos.
+                    </p>
+                </header>
+
+                <div class="grade grade-tecnologias">
+
+                    <div class="grupo">
+                        <h3>Desenvolvimento web</h3>
+                        <ul class="fichas">
+                            <li><img src="imgs/html5.png" alt="" onerror="this.remove()">HTML5</li>
+                            <li><img src="imgs/css.png" alt="" onerror="this.remove()">CSS3</li>
+                            <li><img src="imgs/JavaScript.png" alt="" onerror="this.remove()">JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Programação e backend</h3>
+                        <ul class="fichas">
+                            <li><img src="imgs/Python-logo.png" alt="" onerror="this.remove()">Python</li>
+                            <li><img src="imgs/flask.png" alt="" onerror="this.remove()">Flask</li>
+                            <li><img src="imgs/flask.svg" alt="" onerror="this.remove()">Flask-SQLAlchemy</li>
+                            <li><img src="imgs/flask.svg" alt="" onerror="this.remove()">Flask-Login</li>
+                        </ul>
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Banco de dados</h3>
+                        <ul class="fichas">
+                            <li><img src="imgs/sql.jpg" alt="" onerror="this.remove()">SQL</li>
+                            <li><img src="imgs/sqlite.jpg" alt="" onerror="this.remove()">SQLite</li>
+                            <li><img src="imgs/sqlalchemy.webp" alt="" onerror="this.remove()">SQLAlchemy</li>
+                            <li><img src="imgs/modelagem.svg" alt="" onerror="this.remove()">Modelagem de dados</li>
+                        </ul>
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Versionamento e colaboração</h3>
+                        <ul class="fichas">
+                            <li><img src="imgs/git.png" alt="" onerror="this.remove()">Git</li>
+                            <li><img src="imgs/github.png" alt="" onerror="this.remove()">GitHub</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="secao">
+            <div class="container">
+
+                <header class="titulo-secao">
+                    <h2>Projetos da equipe</h2>
+                    <p>
+                        Veja alguns dos trabalhos que estamos desenvolvendo
+                        durante nossa jornada na tecnologia.
+                    </p>
+                </header>
+
+                <div class="grade grade-projetos">
+
+                    <article class="card projeto">
+                        <div class="ph projeto-img">
+                            <img
+                                src="imgs/booklink.png"
+                                alt="Imagem do primeiro projeto"
+                                onerror="this.remove()"
+                            >
+                        </div>
+
+                        <h3>BookLink — Sistema Gerenciador de Biblioteca</h3>
+                        <p>Sistema web para gerenciamento de livros, estoque, usuários e vendas, desenvolvido como projeto acadêmico.</p>
+                        <p class="techs">Tecnologias: Python, Flask, SQLAlchemy, SQLite, HTML, CSS e JavaScript.</p>
+                        <a href="#contato" class="link">Saiba mais</a>
+                    </article>
+
+                    <article class="card projeto">
+                        <div class="ph projeto-img">
+                            <img
+                                src="assets/img/projetos/projeto-2.jpg"
+                                alt="Imagem do segundo projeto"
+                                onerror="this.remove()"
+                            >
+                        </div>
+
+                        <h3>Nome do projeto</h3>
+                        <p>Explique brevemente o problema que o projeto procura resolver.</p>
+                        <p class="techs">Tecnologias: preencher</p>
+                        <a href="#contato" class="link">Saiba mais</a>
+                    </article>
+
+                    <article class="card projeto">
+                        <div class="ph projeto-img">
+                            <img
+                                src="assets/img/projetos/projeto-3.jpg"
+                                alt="Imagem do terceiro projeto"
+                                onerror="this.remove()"
+                            >
+                        </div>
+
+                        <h3>Nome do projeto</h3>
+                        <p>Adicione uma descrição real quando o projeto estiver definido.</p>
+                        <p class="techs">Tecnologias: preencher</p>
+                        <a href="#contato" class="link">Saiba mais</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SOBRE A EMPRESA -->
+        <section id="sobre" class="secao secao-alt">
+            <div class="container sobre-grade">
+
+                <!-- Troque pela foto ou imagem que representa a equipe -->
+                <div class="ph sobre-img">
+                    <img
+                        src="imgs/pexels-cesar-gaviria-232160-36571389.jpg"
+                        alt="Equipe World Software"
+                        onerror="this.remove()"
+                    >
+                </div>
+
+                <div>
+                    <h2>Um pouco sobre a World Software</h2>
+
+                    <p>
+                        Somos uma equipe de estudantes de Desenvolvimento
+                        de Sistemas que gosta de tecnologia e de criar
+                        soluções para problemas do dia a dia.
+                    </p>
+
+                    <p>
+                        A World Software é o espaço onde colocamos nossos
+                        conhecimentos em prática, trabalhamos em equipe
+                        e desenvolvemos projetos enquanto aprendemos.
+                    </p>
+
+                    <dl class="valores">
+                        <div>
+                            <dt>Nosso objetivo</dt>
+                            <dd>Criar soluções úteis e funcionais.</dd>
+                        </div>
+
+                        <div>
+                            <dt>Trabalho em equipe</dt>
+                            <dd>Compartilhar ideias e aprender juntos.</dd>
+                        </div>
+
+                        <div>
+                            <dt>Aprendizado</dt>
+                            <dd>Melhorar nossos projetos a cada etapa.</dd>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- INTEGRANTES -->
+        <section id="equipe" class="secao">
+            <div class="container">
+
+                <header class="titulo-secao">
+                    <h2>Quem faz parte da equipe</h2>
+                    <p>Conheça os integrantes da World Software.</p>
+                </header>
+
+                <div class="grade grade-equipe">
+
+                    <!-- Troque a foto e a descrição de cada integrante -->
+                    <article class="card integrante">
+                        <div class="ph avatar">
+                            <img
+                                src="assets/img/equipe/integrante-1.jpg"
+                                alt="Foto de Eduardo Rodrigues Silva Filho"
+                                onerror="this.remove()"
+                            >
+                        </div>
+                        <h3>Eduardo Rodrigues Silva Filho</h3>
+                        <p class="cargo">Integrante</p>
+                        <p>Participa do planejamento e desenvolvimento dos projetos da equipe.</p>
+                    </article>
+
+                    <article class="card integrante">
+                        <div class="ph avatar">
+                            <img
+                                src="assets/img/equipe/integrante-2.jpg"
+                                alt="Foto de Gustavo Sena"
+                                onerror="this.remove()"
+                            >
+                        </div>
+                        <h3>Gustavo Sena</h3>
+                        <p class="cargo">Integrante</p>
+                        <p>Participa do planejamento e desenvolvimento dos projetos da equipe.</p>
+                    </article>
+
+                    <article class="card integrante">
+                        <div class="ph avatar">
+                            <img
+                                src="imgs/gabriel.jpeg"
+                                alt="Foto de Gabriel dos Santos Silva"
+                                onerror="this.remove()"
+                            >
+                        </div>
+                        <h3>Gabriel dos Santos Silva</h3>
+                        <p class="cargo">Integrante</p>
+                        <p>Participa do planejamento e desenvolvimento dos projetos da equipe.</p>
+                    </article>
+
+                    <article class="card integrante">
+                        <div class="ph avatar">
+                            <img
+                                src="imgs/eduardo.jpeg"
+                                alt="Foto de Eduardo Elias Cheberle"
+                                onerror="this.remove()"
+                            >
+                        </div>
+                        <h3>Eduardo Elias Cheberle</h3>
+                        <p class="cargo">Integrante</p>
+                        <p>Participa do planejamento e desenvolvimento dos projetos da equipe.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- DIFERENCIAIS -->
+        <section id="diferenciais" class="secao secao-alt">
+            <div class="container">
+
+                <header class="titulo-secao">
+                    <h2>Como trabalhamos</h2>
+                    <p>Alguns princípios que buscamos seguir nos projetos.</p>
+                </header>
+
+                <ul class="diferenciais">
+                    <li>
+                        <h3>Organização</h3>
+                        <p>Planejamento das tarefas e das etapas do projeto.</p>
+                    </li>
+
+                    <li>
+                        <h3>Comunicação</h3>
+                        <p>Conversa clara para entender cada necessidade.</p>
+                    </li>
+
+                    <li>
+                        <h3>Praticidade</h3>
+                        <p>Funcionalidades pensadas para facilitar o uso.</p>
+                    </li>
+
+                    <li>
+                        <h3>Aprendizado</h3>
+                        <p>Busca por melhorias e novos conhecimentos.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato" class="secao">
+            <div class="container contato-grade">
+
+                <div>
+                    <h2>Tem uma ideia? Vamos conversar.</h2>
+
+                    <p>
+                        Conte pra gente o que você precisa. Podemos conversar
+                        sobre o projeto e pensar em uma solução.
+                    </p>
+
+                    <a
+                        href="#"
+                        id="botaoWhatsapp"
+                        class="botao botao-contorno"
+                    >
+                        Falar pelo WhatsApp
+                    </a>
+
+                    <p id="avisoWhatsapp" class="nota" hidden>
+                        Configure o número do WhatsApp em js/script.js.
+                    </p>
+                </div>
+
+                <!-- Formulário visual; configure o envio antes de publicar -->
+                <form id="formContato" class="formulario" novalidate>
+
+                    <p class="nota">
+                        Preencha os campos para apresentar sua ideia.
+                    </p>
+
+                    <label for="nome">Nome</label>
+                    <input
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        autocomplete="name"
+                    >
+                    <small class="erro" data-erro="nome"></small>
+
+                    <label for="email">E-mail</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                    >
+                    <small class="erro" data-erro="email"></small>
+
+                    <label for="tipo">Tipo de projeto</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Selecione uma opção</option>
+                        <option>Site institucional</option>
+                        <option>Sistema web</option>
+                        <option>Sistema de gestão</option>
+                        <option>Aplicação digital</option>
+                        <option>Outro</option>
+                    </select>
+                    <small class="erro" data-erro="tipo"></small>
+
+                    <label for="mensagem">Conte sobre sua ideia</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"
+                    ></textarea>
+                    <small class="erro" data-erro="mensagem"></small>
+
+                    <button type="submit" class="botao">
+                        Enviar mensagem
+                    </button>
+
+                    <p id="retorno" class="retorno" role="status"></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container rodape-grade">
+
+            <div>
+                <a href="#inicio" class="logo">
+                    <img
+                        src="assets/img/logo.png"
+                        alt=""
+                        class="logo-img"
+                        onerror="this.remove()"
+                    >
+                    <span>World<b>Software</b></span>
+                </a>
+
+                <p id="rodapeEmail" hidden></p>
+            </div>
+
+            <nav aria-label="Links do rodapé">
+                <a href="#servicos">Serviços</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div id="redesSociais"></div>
+
+        </div>
+
+        <p class="container copia">
+            © <span id="ano"></span> World Software.
+            Projeto acadêmico da ETEC.
+        </p>
+    </footer>
+
+</body>
+</html>
